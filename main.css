@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: tahoma,Arial, Helvetica, sans-serif;
+}
+.contanier{
+margin: 20px auto;
+width: 1000px;
+}
+.row{
+    display: flex;
+}
+hr{
+    border: 1px solid #eee;
+}
+.game-info{
+    display: flex;
+}
+.game-info .game-name{
+    flex: 1;
+}
+.game-info .category {
+    flex: 1;
+    text-align: right;
+}
+
+.game-info .category  span{
+   text-transform: capitalize;
+   color: red;
+   font-weight: bold;
+}
+.hangman-draw {
+    flex: 1;
+    background-color: #eee;
+    padding: 20px;
+    height: 324px;
+}
+.hangman-draw .the-draw{
+    width: 60px;
+    height: 280px;
+    border-bottom: 4px solid #222;
+    position: relative;
+    margin: auto;
+    }
+.hangman-draw .the-stand{
+    content: "";
+    position: absolute;
+    width: 4px;
+    background-color: #222;
+    height: 100%;
+    left: 50%;
+    margin-left: -2px;
+    }
+ .hangman-draw .the-hang::before {
+      content: "";
+    position: absolute;
+     height: 4px;
+     background-color: #222;
+     width: 100px;
+     left: 30px;
+     top: 10px;
+        }
+     .hangman-draw .the-hang::before {
+      content: "";
+    position: absolute;
+     height: 4px;
+     background-color: #222;
+     width: 100px;
+     left: 30px;
+     top: 10px;
+        }
+ .hangman-draw .the-hang::after {
+content: "";
+position: absolute;
+ height: 30px;
+background-color: #222;
+width: 4px;
+ left: 126px;
+ top: 10px;
+ }
+
+.the-draw .the-rope{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    left: 95px;
+    top: 36px;
+    border: 4px dashed #222;
+}
+.the-draw .head{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+border: 4px solid #222;
+position: absolute;
+left: 105px;
+top: 46px;
+}
+.the-draw .body{
+    position: absolute;
+    background-color: #222;
+    width: 4px;
+    height: 110px;
+    top: 95px;
+    left: 130px;
+}
+.the-draw .hands::before{
+
+left: 85px;
+transform: rotate(30deg);
+}
+.the-draw .hands::after{
+    left: 130px;
+        transform: rotate(-30deg);
+}
+.the-draw .hands::after,
+.the-draw .hands::before{
+    content: "";
+width: 50px;
+position: absolute;
+height: 4px;
+background-color: #222;
+top: 120px;
+}
+
+.the-draw .legs::before {
+
+    left: 85px;
+    transform: rotate(-30deg);
+}
+
+.the-draw .legs::after {
+    left: 130px;
+    transform: rotate(30deg);
+}
+
+.the-draw .legs::after,
+.the-draw .legs::before {
+    content: "";
+    width: 50px;
+    position: absolute;
+    height: 4px;
+    background-color: #222;
+    top: 215px;
+}
+
+.letters{
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+}
+.letters .letter-box{
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    background-color: green;
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
